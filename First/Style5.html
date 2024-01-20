@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+    <title> Styles5 </title>
+
+    <!-- #para1 -> id selector
+        .something -> class selector
+        * Universal selector
+
+    -->
+    <style type="text/css">
+        
+        div p{
+            color: red;
+        }
+        body > p{
+            color: blue;
+        }
+
+        .relpos{
+            position: relative;
+            top: 100px;
+            left: 100px;
+            color: green;
+        }
+        .abspos{
+            position: absolute;
+            top: 50px;
+            left: 80px;
+            color: green;
+        }
+    </style>
+</head>
+
+<body> 
+    <p><a href="web1.html">Go back</a></p>
+    
+    <div>
+    <p>This is inside div</p>
+    </div>
+    <p> this is outside div</p>
+    <p> body > p works on children of body only, so 
+        won't work on div
+    </p>
+
+    <p class="relpos">Relpos</p>
+    <p class="abspos">abspos</p>
+</body>
+</html>

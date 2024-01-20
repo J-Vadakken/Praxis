@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+    <title> Styles7 </title>
+
+    <!-- Types of style sheets
+        1) Inline style sheet
+        2) Document level style sheet
+        3) External Style sheet
+
+        have been doing 2) document level style sheet
+        this whole time
+
+        3) <h1 stlye="color:blue;font-size:24px;"> This is an inline style</h1>
+
+
+    -->
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <style type="text/css">
+        p{
+            color: red;
+        }
+        body > h1{
+            color: orange;
+        }
+    </style>
+</head>
+
+<body> 
+    <p><a href="web1.html">Go back</a></p>
+    
+    <h1 style="color: red; border: 3px solid red;"> This is an inline style</h1>
+    <h3> This is from an external style sheet</h3>
+    
+    <!-- Understanding prioity-->
+
+    <h1 style="color:red"> What color will I be</h1>
+    <h1> what about me</h1>
+    <div>
+        <h1>What about me</h1>
+    </div>
+</body>
+</html>
