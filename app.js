@@ -9,4 +9,6 @@ const observer = new IntersectionObserver((entries => {
 }));
 
 const hiddenElements = document.querySelectorAll(".hidden");
+const imghiddenElements = document.querySelectorAll(".imghidden");
 hiddenElements.forEach((el) => observer.observe(el));
+imghiddenElements.forEach((el) => observer.observe(el));
