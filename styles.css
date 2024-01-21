@@ -5,7 +5,11 @@ body {
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
     padding: 0;
-    margin: 10%;
+    margin: 20%;
+}
+button{
+    background-color: transparent;
+    border: none;
 }
 
 h2{
@@ -28,6 +32,10 @@ section {
     margin-top: 20vh;
     border-bottom: #ffffff solid 1px;
     padding-bottom: 50px;
+}
+
+section > p{
+    position: relative;
 }
 #section1{
     margin-top: 10vh;
@@ -53,7 +61,7 @@ section {
 }
 .imghidden{
     opacity: 0;
-    transform: translateX(50%);
+    transform: translateX(100%);
     filter: blur(20px);
     transition: all 1s;}
 .show {
